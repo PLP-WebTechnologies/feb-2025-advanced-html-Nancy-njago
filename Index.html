@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Lists,images,Tables,Forms</title>
+        </head>
+        <body>
+            <h2> CBC Subjects</h2>
+            <h3> Ordered Lists</h3>
+            <ol type="i" start="1">
+                <li>Mathematics</li>
+                <li>English</li>
+                <li>Kiswahili</li>
+                <li>Social_Science</li>
+                <li>C.R.E</li>
+            </ol>
+            
+            <h2>External Images</h2>
+            <img src="https://images.pexels.com/photos/19085454/pexels-photo-19085454/free-photo-of-townhouse-entrance-door-with-potted-plants-in-front.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="image of the house main entrance" width="350" height="350">
+            
+            <h2>Students Contacts</h2>
+            <table border="1">
+                <caption>Table of 5 Students</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Nancy</td>
+                        <td>Roberts</td>
+                        <td>1400 Nairobi</td>
+                        <td>0700123567</td>
+                        <td>nancy@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah</td>
+                        <td>Williams</td>
+                        <td>420 Bondo</td>
+                        <td>0700456567</td>
+                        <td>sarah@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Amani</td>
+                        <td>500 Kisumu</td>
+                        <td>0700789567</td>
+                        <td>mary@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Anne</td>
+                        <td>Maribel</td>
+                        <td>600 Kiambu</td>
+                        <td>0700125567</td>
+                        <td>anne@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Jeremy</td>
+                        <td>700 Nakuru</td>
+                        <td>0700987567</td>
+                        <td>john@gmail.com</td>
+                    </tr>
+                   
+                </tbody>
+              
+            </table>
+
+            <h2>Students Registration Form </h2>
+            <form action="" method="">
+                <!-- Student Name-->
+                <label for="name" >Full Name:</label>
+                <input  type="text" id="student_name" name="student_name"  placeholder="Enter your full name" required>
+                <!--Student Email -->
+                <label for="email"> Student_Email</label>
+                <input  type="email" id="student_email" name="student_email" placeholder="enter your email" required>
+                <!--Student_password  -->
+                <label for="password">Password</label>
+                <input  type="password" id="password" name="student_password" placeholder="enter your password" required minlength="8">
+                <!--Student Date of Birth -->
+                <label for="date_field">Date_of_Birth</label>
+                <input  type="dob" id="dob" name="dob" required>
+                <br><br>
+                 <!--Student_Gender(Radio buttons fields) -->
+                <label for="gender"> Gender</label>
+                <input type="radio" id="gender" name="gender" value="Female">Female
+                <input type="radio" id="gender" name="gender" value="Male"> Male
+                <br></br>
+                 <!--Student_Hobbies (Checkbox Fields)-->
+                <label for="hobbies">Hobbies</label>
+                <input type="checkbox" name="hobbies" value="sports">sports
+                <input type="checkbox" name="hobbies" value="music">music
+                <input type="checkbox" name="hobbies" value="Art">Art
+                <input type="checkbox" name="hobbies" value="travel">Travel
+                <br><br>
+                 <!--Student_ country of Origin(Dropdown fields) -->
+                <label for="country">County</label>
+                <select name="country" id="country">
+                  <option>--Select Country--</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="South Africa"> South Africa</option>
+                  <option value="Rwanda"> Rwanda</option>
+
+                </select>
+            <br><br>
+            
+         <button type="submit">Register</button>
+         <input type="Submit" value="cancel">
+            </form>
+        </body>
+        
+</html>
